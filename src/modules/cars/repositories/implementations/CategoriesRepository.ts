@@ -1,5 +1,5 @@
-import { Category } from "../model/Category";
-import { ICategoriesRepository, ICreateCategoryDTO } from "./ICategoriesRepository";
+import { Category } from "../../model/Category";
+import { ICategoriesRepository, ICreateCategoryDTO } from "../ICategoriesRepository";
 /*
 TODO: usamos o padrão Singleton de projetos para garantir que apenas uma 
       instância de CategoriesRepository seja criada
