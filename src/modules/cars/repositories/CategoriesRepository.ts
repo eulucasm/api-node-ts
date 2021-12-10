@@ -1,8 +1,9 @@
 import { Category } from "../model/Category";
 import { ICategoriesRepository, ICreateCategoryDTO } from "./ICategoriesRepository";
-
-//Singleton
-
+/*
+TODO: usamos o padrão Singleton de projetos para garantir que apenas uma 
+      instância de CategoriesRepository seja criada
+*/
 class CategoriesRepository implements ICategoriesRepository {
    private categories: Category[];
 
