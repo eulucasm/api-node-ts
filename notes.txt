@@ -1,0 +1,18 @@
+docker ps -> ver todos os containers funcionando(startados)
+docker ps -a -> ver todos os containers(parados ou iniciados)
+docker rm {id a remover} -> remover container
+docker start {nome do container} -> iniciar container
+docker stop {nome do container} -> parar container
+
+docker compose /*/*/*
+
+docker-compose up -d -> usado na primeira chamada do container (cria e inicia o container)
+docker-compose start -> iniciar nosso container
+docker-compose stop -> parar nosso container(apenas para o serviço)
+docker-compose down -> remover nosso container (Remover tudo que foi criado no serviço)
+
+docker exec -it {nome do cantainer ou id} /bin/bash 
+-> executar comando no container(abre a comande line)
+
+docker logs {nome do container} -> ver logs do container
+docker logs {nome do container} -f -> ver logs do container e ficar observando o container
