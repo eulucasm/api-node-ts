@@ -5,15 +5,14 @@ import {getRepository, Repository} from "typeorm";
 TODO: usamos o padrão Singleton de projetos para garantir que apenas uma 
       instância de CategoriesRepository seja criada
 */
-class CategoriesRepository implements ICategoriesRepository {
-   
+class CategoriesRepository implements ICategoriesRepository {   
    private repository: Repository<Category>;   
 
    constructor() {
       this.repository = getRepository(Category);
    }
    
-   async create({ name, description }: ICreateCategoryDTO): Promise<void> {
+   async create({ description, name }: ICreateCategoryDTO): Promise<void> {
       const category = this.repository.create({
          description,
          name,
